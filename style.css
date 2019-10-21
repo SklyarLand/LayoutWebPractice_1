@@ -1,0 +1,433 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    background: #000;
+    display: flex;
+}
+.header_logo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%;
+}
+nav{
+    margin-top: 56px;
+    margin-left: 29%;
+}
+.topnav a{
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#myTopnav a:hover{
+    border-bottom: 3px solid #fcac45;
+    opacity: 0.99;
+}
+.topnav a:first-child{
+    border-bottom: 3px solid #fcac45;
+    opacity: 0.99;
+}
+.topnav .icon{
+    display: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main .main_welcome{
+    background: #000;
+    text-align: center;
+    padding: 200px 0 410px 0;;
+}
+main .main_welcome p{
+    color: #999999;
+    font-size: 20px;
+}
+main .main_welcome h1{
+    color: #999999;
+    font-size: 44px;
+    font-weight: 100;
+}
+main .main_welcome h1:after{
+    display: none;
+}
+span.mycompany{
+    color: #fcac45;
+    font-weight: 900;
+}
+main .main_welcome p strong{
+    color: #c3c3c3;
+}
+.wrapper{
+    width: 76%;
+    margin :0 auto;
+}
+main .main_about{
+    display: flex;
+    padding: 105px 0 100px 0;
+}
+.about_right{
+    margin-left: 175px;
+    margin-top: 30px;
+}
+.about_right h1{
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 900;
+}
+.about_right h1 b{
+    color: #222222;
+    font-weight: 200;
+}
+.about_right h1::after{
+    display: none;
+}
+.about_right p{
+    margin: 35px 0 50px 0;
+    color: #848484;
+    font-size: 14px;
+}
+.about_right li{
+    background: url(./images/mark.png) 0px no-repeat;
+    padding-left: 26px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #848484;
+}
+.mv-100{
+    min-width: 100%;
+}
+main .main_team{
+    background-color: #000000;
+    padding: 100px 0 165px 0;
+    color: white;
+    text-align: center;
+}
+main .main_team h1{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* .line{
+    height: 3px;
+    width: 100px;
+    background-color: #fcac45;
+    position: relative;
+    left: 46%;
+} */
+.wrapper .team_cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 105px;
+}
+.team_cards .card{
+    margin: 0 20px;
+}
+.photo{
+    background-color: #d7d7d7;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.team_cards .name{
+    font-size: 20px;
+    padding-bottom: 12px;
+    font-weight: 500;
+}
+.team_cards .position{
+    font-size: 16px;
+    padding-bottom: 38px;
+    font-weight: 100;
+}
+.team_cards .about_position{
+    font-size: 14px;
+}
+.services_cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /*задаем 4 колонки( их может быть сколько угодно)*/
+    grid-column-gap: 20px;/*расстояние между колонками */
+}
+.main_services h1{
+    text-align: center;
+    padding: 100px 0 30px 0;
+}
+.main_services p{
+    color: #6c6c6c;
+    margin-bottom: 100px;
+    font-size: 16px;
+    padding-top: 58px;
+}
+.services_card h4{
+    font-size: 25px;
+    padding-top: 28px;
+    padding-bottom: 22px;
+}
+p.about_service{
+    font-size: 14px;
+    padding-top: 0;
+}
+.main_clients{
+    padding: 100px 0 195px 0;
+    background-color: #000000;
+    text-align: center;
+}
+.main_clients h1{
+    color: white;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+.main_clients h1 strong{
+    font-weight: 900;
+}
+.main_clients img{
+    margin-left: 30px;
+    margin-top: 95px;
+}
+.main_work{
+    padding: 100px 0 85px 0;
+    text-align: center;
+}
+.main_work h1{
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.main_work p{
+    padding: 60px 0 165px 0;
+    color: #6c6c6c;
+}
+.main_work img:hover{
+    opacity: 0.9;
+}
+
+.gal_line img{
+    margin: 15px 10px;
+}
+.main_testimonials{
+    text-align: center;
+    padding: 100px 0 175px 0;
+    background-color: #000;
+}
+.main_testimonials h1{
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+.main_testimonials p{
+    color: white;
+    padding: 115px 0 50px 0;
+    text-transform: uppercase;
+}
+.main_testimonials p.autor{
+    padding: 0;
+    text-transform: none;
+    color: #7a7a7a;
+}
+
+.contact_wrapper h1, p{
+    text-align: center;
+}
+.contact_wrapper h1{
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.contact_wrapper p{
+    margin-top: 56px;;
+}
+.contact_wrapper{
+    width: 753px;
+    margin: 0 auto;
+    padding: 100px 0 70px 0;
+}
+.contact_form input{
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+form p{
+    color: #a1a1a1;
+}
+.form_inputs{
+    display: flex;
+}
+input:first-of-type{
+    margin-right: 33px;
+}
+.red{
+    color:#db0000;
+}
+textarea{
+    width: 100%;
+    height: 163px;
+}
+input, textarea{
+    border: 1px solid #999999;
+}
+.button_block{
+    display: flex;
+    justify-content: flex-end;
+}
+input[type=submit]{
+    width: 165px;
+    height: 40px;
+    margin-right: 0;
+    background-color: #fcac45;
+    color: white;
+    margin-top: 30px;
+}
+form p{
+    text-align: left;
+}
+h1:after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid #fcac45;
+}
+footer{
+    background-color: #222222;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    margin: 0 6px;
+}
+.social img:hover{
+    opacity: 0.6;/* прозрачность*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){/* оступы для разных ширин экрана*/
+    nav{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1105px){
+    nav{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1010px){
+    .topnav a{
+        display: none;/* не отображаем ссылкки*/
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
+    nav{
+        width: 100%;
+    }
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    header .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top:-50px;
+        right: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+
+
+    main .main_welcome{
+        padding: 50px 0 50px 0;
+    }
+    main .main_welcome p{
+        font-size: 14px;
+    }
+    main .main_welcome h1{
+        font-size: 25px;
+    }
+    .mv-100{
+        max-width: 100%;
+    }
+    main .main_about{
+        flex-direction: column;
+    }
+    .about_right{
+        text-align: center;
+        margin-left: 0;
+    }
+    .about_right li{
+        text-align: left;
+    }
+    .about_right h1{
+        font-style: 20px;
+        margin-top: 10px;
+    }
+    .wrapper .team_cards{
+        flex-direction: column;
+    }
+    .services_cards{
+        grid-template-columns: auto;
+    }
+    .gal_line img:not(:first-child){
+        display: none;
+    }
+}
